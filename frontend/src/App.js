@@ -90,8 +90,8 @@ function App() {
     }
   }
 
-  function deleteEvent(id) {
-    fetch('https://dtu-event-board-backend.onrender.com/events/' + id, {
+  function deleteEvent(_id) {
+    fetch('https://dtu-event-board-backend.onrender.com/api/events/' + _id, {
       method: 'DELETE'
     }).then(() => fetchEvents());
   }
